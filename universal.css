@@ -1,0 +1,33 @@
+/* This CSS page is for CSS that can be used on any part of the webbpage */
+:root[data-theme="light"] {
+  --text: #0a1517;
+  --background: #f7fbfc;
+  --primary: #59a7b9;
+  --secondary: #d59ab5;
+  --accent: #c8977d;
+}
+:root[data-theme="dark"] {
+  --text: #eaf4f6;
+  --background: #030607;
+  --primary: #4594a5;
+  --secondary: #652a44;
+  --accent: #815136;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background);
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    color: var(--text);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    z-index: -10;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
