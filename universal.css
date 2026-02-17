@@ -1,17 +1,19 @@
 /* This CSS page is for CSS that can be used on any part of the webbpage */
 :root[data-theme="light"] {
-  --text: #0a1517;
-  --background: #f7fbfc;
-  --primary: #59a7b9;
-  --secondary: #d59ab5;
-  --accent: #c8977d;
+    --text: #0a1517;
+    --bg-1: #f7fbfc;
+    --bg-2: #d1d6d9;
+    --primary: #59a7b9;
+    --secondary: #d59ab5;
+    --accent: #c8977d;
 }
 :root[data-theme="dark"] {
-  --text: #eaf4f6;
-  --background: #030607;
-  --primary: #4594a5;
-  --secondary: #652a44;
-  --accent: #815136;
+    --text: #eaf4f6;
+    --bg-1: #030607;
+    --bg-2: #393a3a;
+    --primary: #4594a5;
+    --secondary: #652a44;
+    --accent: #815136;
 }
 
 * {
@@ -20,14 +22,39 @@
 }
 
 body {
-    background-color: var(--background);
+    background-color: var(--bg-1);
+    color: var(--text);
+    font-family: 'Times New Roman', Times, serif;
     width: 100%;
     min-height: 100vh;
     height: fit-content;
-    color: var(--text);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    z-index: -10;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     overflow-x: hidden;
     overflow-y: auto;
+
+}
+
+/* Header */
+header {
+    background-color: var(--primary);
+    width: 100%;
+    height: 5px;
+}
+
+/* Main */
+main {
+    background-color: var(--bg-2);
+    width: 60rem;
+    height: fit-content;
+    margin: 3rem;
+    padding: 4rem;
+}
+@media (width <= 80rem) {
+    main {
+        width: calc(100% - 14rem);
+    }
 }
