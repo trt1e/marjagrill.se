@@ -58,3 +58,14 @@ main {
         width: calc(100% - 14rem);
     }
 }
+
+/* Text styling */
+h1 {
+    font-size: 3rem;
+}
+p {
+    font-size: 1.3rem;
+}
+span.highlight {
+    filter: drop-shadow(1px 1px 1px var(--accent));
+}

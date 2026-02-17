@@ -1,0 +1,9 @@
+main img#portrait {
+    float: right;
+    margin-left: 1rem;
+}
+@media (width <= 35rem) {
+    main img#portrait {
+        width: 100%;
+    }
+}
