@@ -3,15 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./universal.css">
+    <link rel="stylesheet" href="./universal/css/universal.css">
     <link rel="stylesheet" href="./index/style.css">
     <link rel="icon" type="image/x-icon" href="./img/marja/portrait marja cirkel.ico">
     <title>Marja Grills hemsida</title>
 </head>
 <body>
     <header></header>
+    <h1 id="marja_title">Marja<br>Grill</h1>
+    <div id="scroll_images_container">
+        <button class="scrolling_image_element">
+            <img src="./img/honey/20241023_140454.jpg">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </button>
+        <button class="scrolling_image_element">
+            <img src="./img/honey/20250325_110627.jpg">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </button>
+        <button class="scrolling_image_element">
+            <img src="./img/honey/20250325_111609.jpg">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </button>
+        <button class="scrolling_image_element">
+            <img src="./img/honey/20250325_124249.jpg">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </button>
+        <div id="transition_gradient"></div>
+    </div>
     <main>
-        <h1>Marja Grill</h1>
+        <h1>Vem?</h1>
         <img id="portrait" alt="Bild på Marja Grill" src="./img/marja/portrait.jpg">
         <p>
             Marja Grill är grävande reporter på SVT Nyheters grävnav. 
@@ -25,6 +45,7 @@
 
     </footer>
 
-    <script src="./js/color.js"></script>
+    <script src="./universal/js/color.js"></script>
+    <script src="./index/js/scroll_image_colage.js"></script>
 </body>
 </html>
