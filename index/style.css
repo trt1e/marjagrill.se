@@ -7,6 +7,7 @@
     cursor: default;
     z-index: 2;
     color: var(--primary);
+    display: none;
 }
 @media (width <= 600px) {
     #marja_title {
@@ -20,7 +21,7 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 100%;
-
+    display: none;
 }
 .scrolling_image_element {
     width: 100%;
@@ -67,7 +68,7 @@
 }
 
 /* Main */
-main img#portrait {
+main #portrait_frame {
     float: right;
     margin-left: 1rem;
 }
@@ -75,4 +76,7 @@ main img#portrait {
     main img#portrait {
         width: 100%;
     }
+}
+main #portrait_frame p {
+    font-size: 0.8rem;
 }
